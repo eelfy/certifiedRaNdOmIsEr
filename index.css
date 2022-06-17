@@ -1,0 +1,302 @@
+@import url('./fonts/Walsheim/stylesheet.css');
+
+body,
+html{
+  font-family: 'GT WalsheimPro', sans-serif; /* Inter is used as a free alternative to Avenir Next */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1,h2,h3,span,p{color: #05002B;}
+
+header {
+  position: relative;
+  width: 100%;
+  height: 50px;
+
+  /* background-color: #202020; */
+
+  display: flex;
+  align-items: center;
+}
+
+body {
+  background: rgb(59,13,235);
+  background: linear-gradient(21deg, rgba(59,13,235,1) 10%, rgba(91,13,235,1) 42%, rgba(255,0,101,1) 100%);
+}
+
+main {
+  
+  height: 90vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* header */
+.logo{
+  position: absolute;
+  top: 0;
+  margin: 10px;
+  width: 100px;
+  height: 100px;
+}
+
+.logo>img {
+  width: 100%;
+}
+
+/* main */
+.certificateSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 20px;
+
+  width: 100%;
+  height: 100%;
+}
+
+.certificate {
+  position: relative;
+
+  width: 100%;
+  height: 85%;
+
+  border-radius: 16px;
+
+  max-width: 1200px;
+  /* max-height: 100vw; */
+
+  background-color:#fff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  /* cool shadow */
+  -webkit-box-shadow: 0px 17px 23px 0px rgba(6, 17, 26, 0.32);
+  -moz-box-shadow: 0px 17px 23px 0px rgba(6, 17, 26, 0.32);
+  box-shadow: 0px 17px 23px 0px rgba(6, 17, 26, 0.32);
+}
+
+.certificateContent {
+  width: 85%;
+  height: 80%;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;  
+  /* glass */
+  background: rgba( 255, 255, 255, 0.35 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 17.5px );
+  -webkit-backdrop-filter: blur( 17.5px );
+  border-radius: 16px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.certificateContentHeader{
+  padding-top: 40px;
+  width: 90%;
+}
+
+.certLogo {
+  font-weight: 600;
+  font-size: 50px;
+  color: #5b0deb;
+}
+
+.certContTop {
+  margin-top: 40px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 10px;
+}
+
+.certificateContentTitle {
+  text-transform: uppercase;
+  text-align: center;
+  
+  font-size: 82px;
+}
+
+.certificateContentSubTitle{
+  text-transform: uppercase;
+  text-align: center;
+
+  font-size: 24px;
+  font-weight: 500;
+  
+  color: #000;
+  max-width: 400px;
+}
+
+.separator {
+  width: 300px;
+  height: 5px;
+  border-radius: 16px;
+  background-color: #5b0deb;
+}
+
+.certContMid {
+  margin-top: 40px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.certContMid> p{
+  text-transform: uppercase;
+  font-size: 24px;
+}
+.certContMid> .name{
+  border: none;
+  outline: none;
+
+  text-align: center;
+  font-size: 82px;
+  background-color: inherit;
+  max-width: 500px;
+}
+.certContMid> .desc {
+  text-align: center;
+  width: 320px;
+
+  color: gray;
+}
+.certContMid> .desc> span {
+  font-size: 18px;
+  color: #5b0deb;
+}
+
+.figure {
+  position:absolute;
+  margin: 20px;
+}
+
+.redFigure{
+  top: 0;
+  left: 0;
+}
+
+.yellowFigure {
+  bottom: 0;
+  right: 0;
+}
+
+.turquoiseFigure{
+  width: 25%;
+}
+
+.turquoiseFigure1 {
+  bottom: 0;
+  left: 0;
+}
+
+.turquoiseFigure2 {
+  top: 0;
+  right: 0;
+}
+
+.certificateContentFooter {
+  width: 90%;
+}
+
+.certificateContentFooter>.left {
+  float: left;
+}
+
+.certificateContentFooter>.right {
+  float: right;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.signature {
+  width: 20%;
+}
+
+.signature>img {
+  width: 100%;
+}
+
+/* reuse */
+.TitleAndDescr > p {
+  font-size: 24px;
+  font-weight: 600;
+
+  margin-bottom: 6px;
+}
+.TitleAndDescr > span {
+  font-size: 16px;
+  color: #05002bb8;
+  font-weight: 100;
+}
+
+.buttonsBody {
+  display: flex;
+  gap: 16px;
+}
+
+.manageCertificateButton {
+  width: 300px;
+  height: 50px;
+  cursor: pointer;
+
+  border: none;
+  outline: none;
+
+  background: rgba( 255, 255, 255, 0.35 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 17.5px );
+  -webkit-backdrop-filter: blur( 17.5px );
+  border-radius: 16px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+  font-size: 26px;
+  color: #fff;
+
+  border-radius:74% 86% 34% 85% / 59% 71% 69% 85%;
+  -webkit-box-shadow: 0px 17px 23px 0px rgba(6, 17, 26, 0.32);
+  -moz-box-shadow: 0px 17px 23px 0px rgba(6, 17, 26, 0.32);
+  box-shadow: 0px 17px 23px 0px rgba(6, 17, 26, 0.32);
+}
+
+/* footer */
+
+footer {
+  width: 100%;
+  height: 50px;
+}
+
+.footerContent{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 16px;
+}
+
+.yt {
+  height: 45px;
+  width: auto;
+}
+
+.yt>img {
+  width: 100%;
+  height: 100%;
+}
